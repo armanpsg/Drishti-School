@@ -1,0 +1,143 @@
+.gallery{
+    width: 100vw;
+    height: 150vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.row-one{
+    display: flex;
+}
+.row-one p{
+    position: relative;
+    bottom: 3vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+.row-two{
+    display: flex;
+}
+.row-two p{
+    position: relative;
+    bottom: 3vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+.sw{
+    height: 40vh;
+    width: 30vw;
+    background-color: orange;
+    margin: 2vh 4vw 4vh 4vw;
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px 0px rgba(0, 0, 0, 0.603);
+    background-image: url("../Assets/Images/Student-Workshop/SW\ \(1\).JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: sw 5s infinite ease-in;
+}
+@keyframes sw{
+    50%{
+        background-image: url(../Assets/Images/Student-Workshop/SW\ \(2\).JPG);
+    }
+    100%{
+        background-image: url(../Assets/Images/Student-Workshop/SW\ \(5\).JPG);
+    }
+}
+.wcci{
+    height: 40vh;
+    width: 30vw;
+    background-color: orange;
+    margin: 2vh 4vw 4vh 4vw;
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px 0px rgba(0, 0, 0, 0.603);
+    background-image: url("../Assets/Images/WCCI/WCCI-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: wcci 7.5s infinite ease-in;
+}
+@keyframes wcci{
+    50%{
+        background-image: url(../Assets/Images/WCCI/WCCI\ \(2\).jpg);
+    }
+    100%{
+        background-image: url(../Assets/Images/WCCI/WCCI\ \(4\).jpg);
+    }
+}
+.pt{
+    height: 40vh;
+    width: 30vw;
+    background-color: orange;
+    margin: 4vh 4vw 4vh 4vw;
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px 0px rgba(0, 0, 0, 0.603);
+    background-image: url("../Assets/Images/Parent-Workshop/Parent-Workshop\ \(1\).JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: pt 10s infinite ease-in;
+}
+@keyframes pt{
+    50%{
+        background-image: url(../Assets/Images/Parent-Workshop/Parent-Workshop\ \(3\).JPG);
+    }
+    100%{
+        background-image: url(../Assets/Images/Parent-Workshop/Parent-Workshop\ \(5\).JPG);
+    }
+}
+.kd{
+    height: 40vh;
+    width: 30vw;
+    background-color: orange;
+    margin: 4vh 4vw 4vh 4vw;
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px 0px rgba(0, 0, 0, 0.603);
+    background-image: url("../Assets/Images/Kinder-Garden/Activity-America.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: kd 11s infinite ease-in;
+}
+@keyframes kd{
+    50%{
+        background-image: url(../Assets/Images/Kinder-Garden/Aerobics.jpg);
+    }
+    100%{
+        background-image: url(../Assets/Images/Kinder-Garden/Eating-Habits.png);
+    }
+}
+.title-box #gallery-title{
+    margin-top: 4vh;
+    font-size: 8vh;
+    font-weight: bold;
+    color: #093e70;
+}
+.title-box #title-dot{
+    font-size: 6vh;
+    position: relative;
+    bottom: 5vh;
+    color: orange;
+}
+.see-more-button-gallery button{
+    height: 7vh;
+    width: 14vw;
+    margin-top: 4vh;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: #093e70;
+    cursor: pointer;
+    font-size: 2.5vh;
+    transition-property: background-color height width border-radius color;
+    transition-duration: 0.75s;
+}
+.see-more-button-gallery button:hover{
+    background-color: orange;
+    height: 8vh;
+    width: 15vw;
+    border-radius: 30px;
+    color: black;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.438);
+}

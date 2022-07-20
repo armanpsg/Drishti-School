@@ -1,0 +1,8 @@
+.query{
+	height: 10vh;
+	width: 100vw;
+	background-color: orange;
+}
+.main-query-container p{
+	color: black;
+}

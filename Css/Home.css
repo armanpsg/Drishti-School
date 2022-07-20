@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background-color: #093e70;
+}
+#header-bar{
+    background-color: #093e70;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.head{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Assets/Background/School-Bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+.main-nav .main-logo{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.main-nav .main-logo img{
+    width: 27vh;
+    margin-left: 1vw;
+}
+.header-links ul li{
+    list-style: none;
+    margin-right: 2vw;
+}
+#last-link{
+    margin-right: 3vw;
+}
+.header-links .link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.header-links ul li a{
+    color: white;
+    text-decoration: none;
+}
+.header-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: orange;
+    margin: auto;
+    display: block;
+    transition: 0.75s;
+}
+.header-links ul li:hover::after{
+    width: 100%;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+    width: 80%;
+    background-color: #093e70e1;
+    margin: auto;
+    position: relative;
+    top: 25%;
+    border-radius: 20px;
+}
+.image-container .school-name{
+    display: flex;
+    position: relative;
+    bottom: 7vh;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.image-container .school-name p{
+    color: orange;
+    font-size: 4.5vh;
+    font-weight: bold;
+}
+.image-container .main-image-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.image-container .main-image-container p{
+    color: white;
+    margin-right: 6vw;
+}
+.image-container .main-image-container #first{
+    font-size: 4.2vh;
+    font-weight: bold;
+    margin-bottom: 4vh;
+}
+.image-container .main-image-container #second{
+    font-size: 4.1vh;
+    font-weight: bold;
+    margin-bottom: 4vh;
+    color: orange;
+}
+.image-container .main-image-container #third{
+    font-size: 2.4vh;
+}
+#separator{
+    color: black;
+    margin-bottom: 2vh;
+    margin-right: 6vw;
+}
+#Dr-Rc-Jain{
+    margin-top: 7vh;
+    width: 28vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 black;
+    transition-property: box-shadow width border-radius border;
+    transition-duration: 0.75s;
+}
+.core-image{
+    width: 25vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Dr-Rc-Jain:hover{
+    box-shadow: 0 0 15px 0 black;
+    width: 30vh;
+    border-radius: 25px;
+}
+.image-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.show-menu{
+    visibility: collapse;
+}
+#close-menu{
+    visibility: collapse;
+}
+@media (max-width:900px){
+    body{
+        overflow-x: hidden;
+    }
+    .image-container .main-image-container{
+        display: contents;
+    }
+    .image-container .main-image-container #first{
+        font-size: 2.8vh;
+    }
+    .image-container .main-image-container #second{
+        font-size: 2.8vh;
+    }
+    .image-container .main-image-container #third{
+        visibility: collapse;
+        margin-bottom: -10vh;
+    }
+/*    #separator{
+        visibility: collapse;
+    }*/
+    .image-container .school-name p{
+        font-size: 3vh;
+        margin-bottom: -2vh;
+    }
+    .image-container{
+        width: 100vw;
+        border-radius: 0px;
+        height: 80vh;
+    }
+    #close-menu{
+        visibility: visible;
+        height: 6vh;
+        width: 20vw;
+        font-size: 2.5vh;
+        background-color: #093e70;
+        border: none;
+        border-radius: 10px;
+        position: relative;
+        bottom: 15vh;
+        cursor: pointer;
+    }
+    .show-menu{
+        visibility: visible;
+        margin-left: 20vw;
+        background-color: orange;
+        font-size: 2.5vh;
+        height: 5vh;
+        width: 18vw;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-right: 1vw;
+    }
+    .header-links{
+        position: relative;
+        left: 100%;
+    }
+    .header-links .link-container{
+        height: 100vh;
+        background-color: orange;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .header-links .link-container li:after{
+        background-color: #093e70;
+    }
+    .header-links .link-container li{
+        margin-top: 4vh;
+    }
+    .header-links .link-container li a{
+        color: black;
+    }
+    .header-links .link-container #last-link{
+        margin-bottom: 20vh;
+    }
+    .main-nav{
+        display: block;
+    }
+}

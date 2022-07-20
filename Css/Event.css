@@ -1,0 +1,88 @@
+.event{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10vh;
+}
+.event-image-box{
+    width: 70%;
+    height: 65vh;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.459);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: white;
+    background-image: url("../Assets/Images/Senate/Senate\ \(1\).JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slider 15s infinite;
+}
+@keyframes slider{
+    25%{background-image: url("../Assets/Images/Senate/Senate\ \(1\).JPG");}
+    50%{background-image: url("../Assets/Images/Senate/Senate\ \(2\).JPG");}
+    75%{background-image: url("../Assets/Images/Wellness/Wellness\ \(6\).JPG");}
+    100%{background-image: url("../Assets/Images/USA-Trip/US-Trip\ \(1\).jpg");}
+}
+.event-image-box:hover{
+    animation-play-state: paused;
+}
+.main-event-container{
+    background: orange;
+    width: 80%;
+    border-radius: 20px;
+    height: 100%;
+    margin-bottom: 8vh;    
+}
+.main-event-container .marq-title-box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-event-container .marq-title-box #event-title{
+    margin: 2vh 0 2vh 0;
+    font-size: 6vh;
+    font-weight: bold;
+}
+.main-event-container .marq-title-box ul{
+    display: flex;
+}
+.main-event-container .marq-title-box ul li{
+    font-size: 2.5vh;
+    color: white;
+    margin-left: 4vw;
+}
+.moving-text-box{
+    background-color: #093e70;
+    width: 70%;
+    margin: auto;
+    height: 6vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+.see-more-event-btn button{
+    height: 6vh;
+    width: 10vw;
+    background-color: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid #093e70;
+    margin-top: 3vh;
+    cursor: pointer;
+    transition-property: height width background-color color;
+    transition-duration: 0.5s;
+}
+.see-more-event-btn button:hover{
+    color: black;
+    background-color: #093e70;
+    height: 7vh;
+    width: 11vw;
+}
