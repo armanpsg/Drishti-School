@@ -88,8 +88,8 @@ body{
 }
 .image-container .school-name p{
     color: orange;
-    font-size: 4.5vh;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 900;
 }
 .image-container .main-image-container{
     display: flex;
@@ -152,35 +152,23 @@ body{
 }
 #close-menu{
     visibility: collapse;
+    margin-right: 2vw;
 }
-@media (max-width:900px){
+@media (max-width:1000px){
     body{
-        overflow-x: hidden;
+        box-sizing: border-box;
     }
-    .image-container .main-image-container{
-        display: contents;
-    }
-    .image-container .main-image-container #first{
-        font-size: 2.8vh;
-    }
-    .image-container .main-image-container #second{
-        font-size: 2.8vh;
-    }
-    .image-container .main-image-container #third{
-        visibility: collapse;
-        margin-bottom: -10vh;
-    }
-/*    #separator{
-        visibility: collapse;
-    }*/
-    .image-container .school-name p{
-        font-size: 3vh;
-        margin-bottom: -2vh;
-    }
-    .image-container{
+    .head{
         width: 100vw;
-        border-radius: 0px;
-        height: 80vh;
+        height: 110vh;
+    }
+    #header-bar{   
+        width: 100%;
+    }
+    .main-nav .main-logo img{
+        width: 18vh;
+        position: absolute;
+        left: 2vw;
     }
     #close-menu{
         visibility: visible;
@@ -205,6 +193,8 @@ body{
         border-radius: 10px;
         cursor: pointer;
         margin-right: 1vw;
+        position: absolute;
+        right: 20vw;
     }
     .header-links{
         position: relative;
@@ -231,5 +221,53 @@ body{
     }
     .main-nav{
         display: block;
+    }
+    .image-container{
+        height: 80%;
+        width: 100%;
+        position: relative;
+        top: 15vh;
+        border-radius: 0px;
+    }
+    .school-name{
+        padding: 10px;
+    }
+    .main-image-container{
+        flex-direction: column;
+    }
+    .school-name p{
+        margin-bottom: -1vh;
+        position: relative;
+        bottom: 2vh;
+    }
+    .image-container .main-image-container #third{
+        visibility: collapse;
+    }
+    .image-container .main-image-container #first{
+        margin: auto;
+        margin-bottom: 2vh;
+        font-size: 3.7vh;
+        position: relative;
+        bottom: 2vh;
+    }
+    .image-container .main-image-container #second{
+        margin: auto;
+        margin-bottom: 2vh;
+        font-size: 3vh;
+        position: relative;
+        bottom: 2vh;
+    }
+    #separator{
+        margin: auto;
+        width: 80%;
+        position: relative;
+        bottom: 2vh;
+    }
+    .core-image{
+        margin: auto;
+    }
+    #Dr-Rc-Jain{
+        position: relative;
+        bottom: 4vh;
     }
 }

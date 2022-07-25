@@ -35,15 +35,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: sw 5s infinite ease-in;
-}
-@keyframes sw{
-    50%{
-        background-image: url(../Assets/Images/Student-Workshop/SW\ \(2\).JPG);
-    }
-    100%{
-        background-image: url(../Assets/Images/Student-Workshop/SW\ \(5\).JPG);
-    }
 }
 .wcci{
     height: 40vh;
@@ -56,15 +47,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: wcci 7.5s infinite ease-in;
-}
-@keyframes wcci{
-    50%{
-        background-image: url(../Assets/Images/WCCI/WCCI\ \(2\).jpg);
-    }
-    100%{
-        background-image: url(../Assets/Images/WCCI/WCCI\ \(4\).jpg);
-    }
 }
 .pt{
     height: 40vh;
@@ -77,15 +59,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: pt 10s infinite ease-in;
-}
-@keyframes pt{
-    50%{
-        background-image: url(../Assets/Images/Parent-Workshop/Parent-Workshop\ \(3\).JPG);
-    }
-    100%{
-        background-image: url(../Assets/Images/Parent-Workshop/Parent-Workshop\ \(5\).JPG);
-    }
 }
 .kd{
     height: 40vh;
@@ -98,15 +71,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: kd 11s infinite ease-in;
-}
-@keyframes kd{
-    50%{
-        background-image: url(../Assets/Images/Kinder-Garden/Aerobics.jpg);
-    }
-    100%{
-        background-image: url(../Assets/Images/Kinder-Garden/Eating-Habits.png);
-    }
 }
 .title-box #gallery-title{
     margin-top: 4vh;
@@ -140,4 +104,47 @@
     border-radius: 30px;
     color: black;
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.438);
+}
+@media (max-width: 900px){
+    .gallery{
+        height: 260vh;
+        margin-bottom: -10vh;
+    }
+    .row-one{
+        flex-direction: column;
+    }
+    .row-two{
+        flex-direction: column;
+    }
+    .sw{
+        width: 80vw;
+        margin-bottom: 6vh;
+    }
+    .pt{
+        width: 80vw;
+        margin-bottom: 6vh;
+    }
+    .kd{
+        width: 80vw;
+        margin-bottom: 6vh;
+    }
+    .wcci{
+        width: 80vw;
+        margin-bottom: 6vh;
+    }
+    .see-more-button-gallery button{
+        width: 35vw;
+        height: 6vh;
+        font-size: 2.3vh;
+    }
+    .see-more-button-gallery button:hover{
+        width: 35vw;
+        height: 7vh;
+    }
+    .title-box #gallery-title{
+        font-size: 6.5vh;
+    }
+    .title-box #title-dot{
+        font-size: 4vh;
+    }
 }

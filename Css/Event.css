@@ -86,3 +86,33 @@
     height: 7vh;
     width: 11vw;
 }
+@media (max-width: 900px){
+    .event{
+        height: 100vh;
+    }
+    .main-event-container{
+        width: 90%;
+    }
+    .event-image-box{
+        width: 90%;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, .630);
+    }
+    .see-more-event-btn button{
+        width: 35vw;
+        height: 6vh;
+    }
+    .see-more-event-btn button:hover{
+        width: 37vw;
+        height: 7vh;
+        color: whitesmoke;
+    }
+    .moving-text-box{
+        width: 90%;
+    }
+    .main-event-container .marq-title-box ul li{
+        margin-left: 10vw;
+    }
+    .main-event-container .marq-title-box #event-title{
+        font-size: 4vh;
+    }
+}

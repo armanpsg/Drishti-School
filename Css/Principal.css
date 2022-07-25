@@ -33,6 +33,7 @@
     width: 65%;
     background-color: #093e70;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, .639);
 }
 .title{
     color: orange;
@@ -45,4 +46,26 @@
     width: 80%;
     font-size: 18px;
     color: white;
+}
+@media (max-width: 900px){
+    .principal{
+        height: 150vh;
+    }
+    .principal-box{
+        flex-direction: column;
+    }
+    .principal-image-box{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        width: 85%;
+        height: 65%;
+    }
+    .principal-message-box{
+        margin-bottom: 5vh;
+        width: 85%;
+        height: 85%;
+    }
+    .title{
+        font-size: 3vh;
+    }
 }

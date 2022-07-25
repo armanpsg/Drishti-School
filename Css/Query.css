@@ -1,8 +1,132 @@
 .query{
-	height: 10vh;
-	width: 100vw;
 	background-color: orange;
+	height: 80vh;
+	width: 100vw;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
 }
-.main-query-container p{
-	color: black;
+.query-title-container{
+	margin-bottom: 6vh;
+	margin-top: 3vh;
+}
+#t-haq{
+	font-size: 2.5rem;
+	font-weight: bold;
+}	
+#t-contact{
+	font-size: 3vh;
+	font-weight: bold;
+	color: #093e70;
+}
+#main-form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.name-phone{
+	margin-bottom: 3vh;
+}
+.email-text{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3vh;
+}
+.name-phone #name{
+	margin-right: 5vw;
+	width: 20vw;
+	height: 5vh;
+	padding-left: 1vw;
+	outline: none;
+	border-radius: 15px;
+	border: 1px solid black;
+	transition-property: box-shadow;
+	transition-duration: 0.75s;
+}
+.name-phone #name:focus{
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.603);
+}
+.name-phone #phone{
+	width: 20vw;
+	padding-left: 1vw;
+	height: 5vh;
+	outline: none;
+	border-radius: 15px;
+	border: 1px solid black;
+	transition-property: box-shadow;
+	transition-duration: 0.75s;
+}
+.name-phone #phone:focus{
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.603);
+}
+.email-text #email{
+	height: 5vh;
+	width: 46.8vw;
+	margin-bottom: 3vh;
+	padding-left: 1vw;
+	outline: none;
+	border: 1px solid black;
+	border-radius: 15px;
+	transition-property: box-shadow;
+	transition-duration: 0.75s;
+}
+.email-text #email:focus{
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.603);
+}
+.email-text #message{
+	height: 25vh;
+	width: 46.8vw;
+	padding-left: 1vw;
+	padding-top: 1vh;
+	outline: none;
+	border-radius: 15px;
+	border: 1px solid black;
+	transition-property: box-shadow;
+	transition-duration: 0.75s;
+}
+.email-text #message:focus{
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.603);
+}
+.m-s-btn button{
+	height: 6vh;
+	width: 9vw;
+	color: white;
+	background-color: #093e70;
+	cursor: pointer;
+	border: none;
+	border-radius: 15px;
+	margin-top: 2vh;
+	box-shadow: none;
+	transition-property: border-radius box-shadow;
+	transition-duration: 0.75s;
+}
+.m-s-btn button:hover{
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.603);
+}
+@media (max-width: 900px){
+	#t-haq{
+		font-size: 5vh;
+	}
+	#t-contact{
+		font-size: 2.8vh;
+	}
+	.name-phone #name{
+		width: 40vw;
+	}
+	.name-phone #phone{
+		width: 40vw;
+	}
+	.email-text #email{
+		width: 87.5vw;
+	}
+	.email-text #message{
+		width: 87.5vw;
+	}
+	.m-s-btn button{
+		width: 30vw;
+		height: 5vh;
+	}
 }

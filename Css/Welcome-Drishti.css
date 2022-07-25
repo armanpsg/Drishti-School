@@ -36,7 +36,7 @@
 }
 .trans-text-container #welcome-drishti-text{
     margin-top: 2vh;
-    font-size: 22px;
+    font-size: 3vh;
 }
 .trans-text-container{
     display: flex;
@@ -67,4 +67,29 @@
 .know-more-welcome-btn:hover{
     background-color: #093e70;
     border-radius: 20px;
+}
+@media (max-width: 900px){
+    .welcome-drishti{
+        height: 150vh;
+        margin-top: -10vh;
+        margin-bottom: -10vh;
+    }
+    .back-image-box{
+        height: 95%;
+        width: 90%;
+        padding: 20px;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, .630);
+    }
+    .trans-text-container{
+        height: 90%;
+        width: 90%;
+        padding: 10px;
+    }
+    #welcome-drishti-text{
+        font-size: 2.5vh;
+    }
+    .know-more-welcome-btn{
+        width: 35vw;
+        height: 6vh;
+    }
 }

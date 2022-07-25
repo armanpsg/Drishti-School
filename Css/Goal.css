@@ -61,3 +61,34 @@
     border-radius: 25px;
     background-color: #093e70;
 }
+@media (max-width: 900px){
+    .vision-mission{
+        height: 80vh;
+    }
+    .vision-mission-container{
+        padding: 10px;
+        text-align: center;
+    }
+    #vision-heading{
+        font-size: 4vh;
+    }
+    #vision-content{
+        font-size: 2.5vh;
+    }
+    #mission-heading{
+        font-size: 4vh;
+    }
+    #mission-content{
+        font-size: 2.5vh;
+    }
+    .know-more-btn{
+        height: 6vh;
+        width: 30vw;
+        margin-bottom: 4vh;
+    }
+    .know-more-btn:hover{
+        border-radius: 10px;
+        height: 6vh;
+        width: 35vw;
+    }
+}

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="Css/Event.css">
     <link rel="stylesheet" href="Css/Gallery.css">
     <link rel="stylesheet" href="Css/Query.css">
+    <link rel="stylesheet" href="Css/Footer.css">
+    <script src="https://kit.fontawesome.com/4309026cd8.js" crossorigin="anonymous"></script>
     <title>Drishti School</title>
 </head>
 <body>
@@ -48,8 +50,8 @@
                         and an inspiring soul.</p>
                     <p id="second">Dr.Rc Jain</p>
                     <hr id="separator">
-                    <p id="third">Former Professor Govt. College, Ludhiana<br>
-                        Former Principal, Govt. College, Hisar</p>
+                    <p id="third">Former Professor Govt. College - Ludhiana<br>
+                        Former Principal, Govt. College - Hisar</p>
                 </div>
                 <div class="core-image" data-aos="fade-left" data-aos-duration=2000>
                     <img id=Dr-Rc-Jain src="Assets/People/Dr-RcJain.jpg" alt="Dr.Rc Jain">
@@ -127,7 +129,7 @@
         </div>
     </section>
     <section class="gallery">
-        <div class="galley-main-container">
+        <div class="gallery-main-container">
             <div class="title-box" data-aos="flip-right">
                 <p id="gallery-title">Our Gallery</p>
                 <p id="title-dot">. . .</p>
@@ -150,36 +152,71 @@
                     </div>
                     <div class="kinder-garden" data-aos="zoom-in">
                         <div class="kd"></div>
-                        <p>kinder Garden</p>
+                        <p>kinder Garten</p>
                     </div>
                 </div>
             </div>
-            <div class="see-more-button-gallery" data-aos="flip-left"><button>View more</button></div>
-        </div>
+            <div class="see-more-button-gallery" data-aos="flip-left"><button>View More</button></div>
     </section>
     <section class="query">
-        <div class="main-query-container">
-            <p>continue</p>
-            <!-- <div class="query-title">
-                <p id="q-title">Have Any Query ?</p>
-                <p id="q-contact">Contact Us!</p>
-            </div> -->
-            <!-- <form id="main-form" action="index.html" method="post">
-                <div class="name">
-                    <input type="text" class="name-field" placeholder="Full Name">
-                </div>
-                <div class="phone">
-                    <input type="text" class="phone-field" placeholder="Phone Number">
-                </div>
-                <div class="email">
-                    <input type="email" class="email-field" placeholder="email-input">
-                </div>
-                <div class="text">
-                    <textarea placeholder="Your message" class="message-box" cols="30" rows="10"></textarea>
-                </div> -->
-            <!-- </form> -->
+        <div class="query-title-container" data-aos="flip-right">
+            <p id="t-haq">Have Any Query ?</p>
+            <p id="t-contact">Contact Us!</p>
         </div>
+        <form action="index.html" id="main-form">
+            <div class="name-phone" data-aos="fade-down">
+                <input id="name" placeholder="Full Name" type="text">
+                <input type="Phone" id="phone" placeholder="Contact Number">
+            </div>
+            <div class="email-text" data-aos="fade-up">
+                <input type="email" id="email" placeholder="G-mail">
+                <textarea id="message" placeholder="Type your message" cols="30" rows="10"></textarea>
+            </div>
+        </form> 
+        <div class="m-s-btn"><button type="submit">Submit</button></div>
     </section>
+    <footer class="footer-info">
+        <div class="main-container-footer">
+
+            <div id="first-col" class="footer-columns" data-aos="zoom-out">
+                <h4>About Us</h4>
+                <p id="about-info">As a tribute to an educationist father and friend, established in 2006, a school for providing wholesome education.</p>
+                <button class="f-know-more">Read More</button>
+            </div>
+
+            <div class="footer-columns" data-aos="zoom-out">
+                <h4>Main Office</h4>
+                <p id="office-info">Drishti Dr. R.C Jain Innovative Public School, Pakhowal Road, village Narangwal, Ludhiana - 141203</p>
+                <p id="c-n">+91-81463-04502</p>
+                <p id="s-email">info@drishtischool.com</p>
+            </div>
+
+            <div class="footer-columns" data-aos="zoom-out">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li class="q-l"><a href="#">Facilities</a></li>
+                    <li class="q-l"><a href="#">Global Presence</a></li>
+                    <li class="q-l"><a href="#">Alumni</a></li>
+                    <li class="q-l"><a href="#">Admission</a></li>
+                </ul>
+            </div>
+
+            <div id="s-l-ul" class="footer-columns" data-aos="zoom-out">
+                <h4>Social Links</h4>
+                <ul>
+                    <li class="s-l"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="s-l"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="s-l"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="s-l"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <footer class="copy-right">
+        <div class="copy-r">
+            <p id="c-r-msg">Copyright - 2022 Drishti School - All rights reserved. Powered by 3Dee Technologies.</p>
+        </div>
+    </footer>
     <script src="Js/script.js"></script>
     <!--https://github.com/michalsnik/aos-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
